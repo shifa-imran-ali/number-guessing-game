@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <video class="bg-video" autoplay loop muted>
+        <source src="./images/istockphoto-1180472070-640_adpp_is.mp4" type="video/mp4">
+    </video>
+    <div class="main-container">
+        <h1 class="glow">NUMBER GUESSING GAME</h1>
+        <p class="hint">Guess the number between 1 and 100</p>
+        <div>
+            <input type="number" placeholder="Enter your guess" min="1" max="100" id="user-input">
+        <button type="button" id="checkButton">Check</button>
+        </div>
+        <p id="remarks" class="remarks-para"></p>
+        <button id="restartButton" class="my-button" style="display: none;">Restart</button>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

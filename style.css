@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.main-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 10px 10px gray;
+    padding: 10vh;
+    padding-bottom: 10vh;
+    border-radius: 4vh;
+    background-color:#f7dbe0;
+    box-shadow: 10px 10px 60px 2px  #b599d6;
+    border: 1px solid #e60073;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.glow {
+
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+@keyframes glow {
+    from {
+      text-shadow: 0 0 2px #f890ea, 0 0 20px #e408bf, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #d1002d, 0 0 70px #0400e6;
+    }
+    
+    to {
+      text-shadow: 0 0 50px #f7bae4, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #b80129, 0 0 80px #6e4dff;
+    }
+  }
+.hint{
+    font-size: 2rem;
+    
+}
+input{
+    width: 50vh;
+    height: 4vh;
+}
+button{
+    cursor: pointer;
+    border: 1px solid rgb(224, 67, 245);
+    font-size: 1.5rem;
+    color: white;
+    padding: 4px 9px;
+    box-shadow: rgb(248, 2, 146) 2px 2px 12px 1px; 
+    border-radius: 10px;
+    background-color:  rgb(163, 12, 166) ;
+}
+button:hover{
+    background: rgb(218, 100, 247);
+}
+.my-button{
+    position: relative;
+    left: -25vh;
+}
+
+
+
+
+
